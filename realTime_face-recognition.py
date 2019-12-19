@@ -11,8 +11,6 @@ def main():
         img = cv2.imdecode(img_arr,-1)
 
         #cv2.imshow('frame', img)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
 
         # apply face detection
         face, confidence = cv.detect_face(img)
